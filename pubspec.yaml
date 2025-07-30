@@ -1,5 +1,5 @@
 name: jp_app
-description: "A new Flutter project."
+description: "An App Akademie Styling Task."
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  gradient_borders: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -26,4 +27,9 @@ flutter:
    - family:  JPIcons
      fonts:
      - asset: assets/icons/JPApp.ttf
+   - family: Inter
+     fonts:
+     - asset: /assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf
+     - asset: /assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf
+       style: italic
 
