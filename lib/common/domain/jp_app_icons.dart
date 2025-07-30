@@ -7,9 +7,9 @@
 ///
 /// flutter:
 ///   fonts:
-///    - family:  MyFlutterApp
+///    - family:  JPIcons
 ///      fonts:
-///       - asset: fonts/MyFlutterApp.ttf
+///       - asset: icons/JPApp.ttf
 ///
 ///
 ///
@@ -63,7 +63,7 @@ class JpAppIcons {
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-  static const IconData __ = IconData(
+  static const IconData app_coin = IconData(
     0xe808,
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
