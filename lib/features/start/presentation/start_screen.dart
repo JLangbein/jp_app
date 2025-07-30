@@ -6,6 +6,6 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: [Center(child: Icon(JpAppIcons.app_coin))]);
+    return Stack(children: [Center(child: Icon(JpAppIcons.kcal))]);
   }
 }
