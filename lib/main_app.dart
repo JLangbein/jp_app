@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jp_app/features/start/presentation/start_screen.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -7,9 +8,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+        body: StartScreen(),
       ),
     );
   }

@@ -22,4 +22,8 @@ flutter:
   - assets/backgrounds/
   - assets/products/
   - assets/utils/
+  fonts:
+    - family: JPIcons
+      fonts:
+        - asset: asset/icons/JPApp.ttf
 
