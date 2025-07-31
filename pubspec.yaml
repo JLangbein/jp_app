@@ -29,7 +29,7 @@ flutter:
      - asset: assets/icons/JPApp.ttf
    - family: Inter
      fonts:
-     - asset: /assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf
-     - asset: /assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf
+     - asset: assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf
+     - asset: assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf
        style: italic
 
