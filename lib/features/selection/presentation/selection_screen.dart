@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:jp_app/features/selection/data/chip_label_list.dart';
+import 'package:jp_app/features/selection/presentation/hero_container.dart';
 import 'package:jp_app/features/selection/presentation/snack_chip.dart';
+import '/common/data/product_repository.dart';
 
 class SelectionScreen extends StatelessWidget {
   const SelectionScreen({super.key});
@@ -47,6 +49,8 @@ class SelectionScreen extends StatelessWidget {
                         .toList(),
                   ),
                 ),
+                SizedBox(height: 40.0),
+                HeroContainer(product: ProductRepository().products[0]),
               ],
             ),
           ),

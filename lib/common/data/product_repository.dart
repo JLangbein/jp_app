@@ -10,7 +10,7 @@ class ProductRepository {
       price: 13.99,
       likes: 212,
       reviews: 4.8,
-      imageURL: 'assets/burger.png',
+      imageURL: 'assets/products/burger.png',
     ),
     Product(
       name: 'Mowgli\'s Cup',
@@ -20,7 +20,7 @@ class ProductRepository {
       price: 8.99,
       likes: 200,
       reviews: 4.0,
-      imageURL: 'assets/cupcake_cat.png',
+      imageURL: 'assets/products/cupkake_cat.png',
     ),
     Product(
       name: 'Balu\'s Cup',
@@ -30,7 +30,7 @@ class ProductRepository {
       price: 8.99,
       likes: 265,
       reviews: 4.0,
-      imageURL: 'assets/cupcake_chick.png',
+      imageURL: 'assets/products/cupcake_chick.png',
     ),
     Product(
       name: 'Smiling David',
@@ -40,7 +40,7 @@ class ProductRepository {
       price: 3.99,
       likes: 310,
       reviews: 4.0,
-      imageURL: 'assets/icecream_stick.png',
+      imageURL: 'assets/products/icecream_stick.png',
     ),
     Product(
       name: 'Kai in a Cone',
@@ -50,7 +50,7 @@ class ProductRepository {
       price: 3.99,
       likes: 290,
       reviews: 4.0,
-      imageURL: 'assets/icecream_cone.png',
+      imageURL: 'assets/products/icecream_cone.png',
     ),
   ];
 }
