@@ -35,14 +35,14 @@ class CardButton extends StatelessWidget {
             color: Color.fromRGBO(237, 146, 215, 1.0),
           ),
           BoxShadow(
+            blurStyle: BlurStyle.inner,
             offset: Offset(0.0, 3.0),
-            spreadRadius: -5.0,
             blurRadius: 2.0,
             color: Color(0xFF9375B6),
           ),
           BoxShadow(
+            blurStyle: BlurStyle.inner,
             offset: Offset(0.0, 0.0),
-            spreadRadius: -5.0,
             blurRadius: 2.0,
             color: Color(0xFFFFACE4),
           ),
