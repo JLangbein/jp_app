@@ -9,7 +9,7 @@ class SelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        fit: StackFit.expand,
+        //fit: StackFit.expand,
         children: [
           Container(
             decoration: BoxDecoration(
@@ -22,7 +22,8 @@ class SelectionScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsetsGeometry.fromLTRB(24.0, 80.0, 24.0, 8.0),
             child: Column(
-              mainAxisSize: MainAxisSize.max,
+              //mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -33,17 +34,17 @@ class SelectionScreen extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(height: 16.0),
-                SnackChip(label: 'asdfg'),
+                // SizedBox(height: 16.0),
+                // SnackChip(label: 'Salty'),
                 SizedBox(height: 16.0),
                 SizedBox(
-                  height: 100.0,
+                  height: 48.0,
                   child: ListView(
-                    shrinkWrap: true,
+                    shrinkWrap: false,
                     scrollDirection: Axis.horizontal,
                     children: chipLabelList
-                        .map((label) => SnackChip(label: label))
-                        .toList(),
+                      .map((label) => SnackChip(label: label))
+                      .toList(),
                   ),
                 ),
               ],
