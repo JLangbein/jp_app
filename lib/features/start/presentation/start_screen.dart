@@ -37,7 +37,7 @@ class StartScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(18.0, 18.0, 18.0, 84.0),
+          padding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 84.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             mainAxisSize: MainAxisSize.max,
@@ -56,21 +56,39 @@ class StartScreen extends StatelessWidget {
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.fromLTRB(
+                        16.0,
+                        32.0,
+                        16.0,
+                        32.0,
+                      ),
                       child: Column(
                         spacing: 8.0,
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
                             'Feeling Snackish Today?',
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24.0,
+                              fontWeight: FontWeight.w900,
+                            ),
                           ),
-                          Text(
-                            textAlign: TextAlign.center,
-                            'Explore Angi\'s most popular snack selection and get instantly happy.',
-                            style: TextStyle(color: Colors.white),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16.0,
+                            ),
+                            child: Text(
+                              textAlign: TextAlign.center,
+                              'Explore Angi\'s most popular snack selection and get instantly happy.',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w200,
+                                fontSize: 15.0,
+                              ),
+                            ),
                           ),
-                          SizedBox(height: 16.0),
+                          SizedBox(height: 12.0),
                           HeroButton(),
                         ],
                       ),
