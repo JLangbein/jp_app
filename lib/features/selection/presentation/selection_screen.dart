@@ -40,11 +40,11 @@ class SelectionScreen extends StatelessWidget {
                 SizedBox(
                   height: 48.0,
                   child: ListView(
-                    shrinkWrap: false,
+                    shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     children: chipLabelList
-                      .map((label) => SnackChip(label: label))
-                      .toList(),
+                        .map((label) => SnackChip(label: label))
+                        .toList(),
                   ),
                 ),
               ],
