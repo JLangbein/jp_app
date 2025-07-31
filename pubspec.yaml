@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^6.2.1
   gradient_borders: ^1.0.1
 
 dev_dependencies:
@@ -27,9 +28,3 @@ flutter:
    - family:  JPIcons
      fonts:
      - asset: assets/icons/JPApp.ttf
-   - family: Inter
-     fonts:
-     - asset: assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf
-     - asset: assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf
-       style: italic
-
