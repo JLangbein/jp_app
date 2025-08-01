@@ -31,7 +31,7 @@ class ProductDetailsContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
+                  padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 0.0),
                   child: Row(
                     spacing: 8.0,
                     mainAxisSize: MainAxisSize.max,
@@ -45,21 +45,26 @@ class ProductDetailsContainer extends StatelessWidget {
                     ],
                   ),
                 ),
-                Text(
-                  product.name,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 32.0),
-                  child: Text(
-                    product.description,
-                    style: TextStyle(color: Colors.white54, fontSize: 14.0),
-                    textAlign: TextAlign.center,
-                  ),
+                Column(
+                  spacing: 8.0,
+                  children: [
+                    Text(
+                      product.name,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 32.0),
+                      child: Text(
+                        product.description,
+                        style: TextStyle(color: Colors.white54, fontSize: 14.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

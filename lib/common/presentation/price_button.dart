@@ -54,24 +54,24 @@ class PriceButton extends StatelessWidget {
       ),
       // foregroundDecoration: BoxDecoration(),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(64.0, 16.0, 64.0, 16.0),
+        padding: const EdgeInsets.fromLTRB(48.0, 8.0, 48.0, 8.0),
         child: Row(
           children: [
             Text(
               'Add to order for ',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 24.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.w700,
                 fontStyle: FontStyle.normal,
               ),
             ),
-            Icon(JpAppIcons.app_coin, color: Colors.white, size: 18.0),
+            Icon(JpAppIcons.app_coin, color: Colors.white, size: 16.0),
             Text(
               price.toString(),
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 24.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.w700,
                 fontStyle: FontStyle.normal,
               ),
