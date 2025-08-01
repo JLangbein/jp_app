@@ -118,6 +118,46 @@ class ProductDetailsContainer extends StatelessWidget {
                             'Reviews',
                             style: TextStyle(color: Colors.white38),
                           ),
+                          Row(
+                            spacing: 16.0,
+                            children: [
+                              SizedBox(
+                                height: 16.0,
+                                child: Stack(
+                                  children: [
+                                    ListView.builder(
+                                      scrollDirection: Axis.horizontal,
+                                      itemCount: 5,
+                                      shrinkWrap: true,
+                                      itemBuilder: (context, index) {
+                                        return Icon(
+                                          Icons.star_border_outlined,
+                                          color: Colors.white70,
+                                          size: 18.0,
+                                        );
+                                      },
+                                    ),
+                                    ListView.builder(
+                                      scrollDirection: Axis.horizontal,
+                                      itemCount: product.reviews.toInt(),
+                                      shrinkWrap: true,
+                                      itemBuilder: (context, index) {
+                                        return Icon(
+                                          Icons.star,
+                                          color: Colors.white70,
+                                          size: 18.0,
+                                        );
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                product.reviews.toString(),
+                                style: TextStyle(color: Colors.white38),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     ],
