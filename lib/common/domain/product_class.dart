@@ -10,8 +10,11 @@ class Product {
   final String imageURL;
   final int likes;
   final double reviews;
-  static const List<IconData> ingredients = [
-    JpAppIcons.gluten, JpAppIcons.sugar, JpAppIcons.lowfat, JpAppIcons.kcal
+  final List<IconData> ingredients = [
+    JpAppIcons.gluten,
+    JpAppIcons.sugar,
+    JpAppIcons.lowfat,
+    JpAppIcons.kcal,
   ];
 
   Product({

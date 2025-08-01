@@ -43,6 +43,7 @@ class SelectionScreen extends StatelessWidget {
                 SizedBox(
                   height: 48.0,
                   child: ListView(
+                    clipBehavior: Clip.none,
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     children: chipLabelList
@@ -65,9 +66,13 @@ class SelectionScreen extends StatelessWidget {
                 SizedBox(
                   height: 294.0,
                   child: ListView(
+                    clipBehavior: Clip.none,
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     children: ProductRepository().products
+                        .sublist(
+                          1,
+                        ) // to leave out the first product (Angi's Burger)
                         .map((product) => ProductCard(product: product))
                         .toList(),
                   ),
