@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:jp_app/common/domain/jp_app_icons.dart';
 import 'package:jp_app/common/domain/product_class.dart';
 import 'package:jp_app/common/presentation/card_button.dart';
-import 'package:jp_app/common/presentation/hero_button.dart';
 
 class HeroContainer extends StatelessWidget {
   // attributes

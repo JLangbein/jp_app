@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jp_app/common/presentation/product_card.dart';
 import 'package:jp_app/features/selection/data/chip_label_list.dart';
 import 'package:jp_app/features/selection/presentation/hero_container.dart';
 import 'package:jp_app/features/selection/presentation/snack_chip.dart';
@@ -51,6 +52,17 @@ class SelectionScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 40.0),
                 HeroContainer(product: ProductRepository().products[0]),
+                SizedBox(height: 40.0),
+                Text(
+                  'We Recommend',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                SizedBox(height: 18.0),
+                ProductCard(product: ProductRepository().products[1]),
               ],
             ),
           ),
