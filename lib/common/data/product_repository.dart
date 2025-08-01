@@ -30,7 +30,7 @@ class ProductRepository {
       price: 8.99,
       likes: 265,
       reviews: 4.0,
-      imageURL: 'assets/products/cupcake_chick.png',
+      imageURL: 'assets/products/icecream.png',
     ),
     Product(
       name: 'Smiling David',

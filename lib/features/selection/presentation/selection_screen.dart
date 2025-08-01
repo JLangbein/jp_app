@@ -62,7 +62,16 @@ class SelectionScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 18.0),
-                ProductCard(product: ProductRepository().products[1]),
+                SizedBox(
+                  height: 294.0,
+                  child: ListView(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    children: ProductRepository().products
+                        .map((product) => ProductCard(product: product))
+                        .toList(),
+                  ),
+                ),
               ],
             ),
           ),
