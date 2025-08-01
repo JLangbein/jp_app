@@ -38,10 +38,11 @@ class HeroContainer extends StatelessWidget {
               child: Image.asset(product.imageURL, scale: 1.8),
             ),
             Padding(
-              padding: EdgeInsetsGeometry.fromLTRB(18.0, 16.0, 16.0, 24.0),
+              padding: EdgeInsetsGeometry.fromLTRB(24.0, 18.0, 24.0, 48.0),
               child: Column(
                 spacing: 6.0,
                 mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
@@ -102,7 +103,8 @@ class HeroContainer extends StatelessWidget {
                       ),
                     ],
                   ),
-                  HeroButton(),
+                  SizedBox(height: 48.0),
+                  CardButton(),
                 ],
               ),
             ),
