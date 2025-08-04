@@ -26,7 +26,7 @@ class PriceButton extends StatelessWidget {
         ),
         gradient: RadialGradient(
           center: Alignment.bottomRight,
-          radius: 3.0,
+          radius: 5.0,
           colors: [
             Color.fromRGBO(246, 158, 163, 1.0),
             Color.fromRGBO(233, 112, 196, 1.0),
@@ -34,20 +34,20 @@ class PriceButton extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            offset: Offset(0.0, 15.0),
-            blurRadius: 15.0,
-            color: Color.fromRGBO(237, 146, 215, 1.0),
+            offset: Offset(0.0, 5.0),
+            blurRadius: 30.0,
+            color: Color.fromRGBO(237, 146, 215, 0.7),
           ),
           BoxShadow(
             blurStyle: BlurStyle.inner,
             offset: Offset(0.0, 3.0),
-            blurRadius: 3.0,
+            blurRadius: 2.0,
             color: Color(0xFF9375B6),
           ),
           BoxShadow(
             blurStyle: BlurStyle.inner,
             offset: Offset(0.0, 0.0),
-            blurRadius: 3.0,
+            blurRadius: 2.0,
             color: Color(0xFFFFACE4),
           ),
         ],
